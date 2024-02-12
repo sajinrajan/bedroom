@@ -1,0 +1,196 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.top-bar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* position: absolute; */
+}
+.cox-bar{
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nave-bar{
+    
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.nave-bar > a{
+    color: white;
+    padding: 10px 25px;
+}
+.nave-bar::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background:#009688;
+    position: absolute;
+     left: 0;
+     bottom: 105px;
+     transition: 0.5s;
+
+}
+.nave-bar:hover::after{
+    width: 100%;
+    color: #0ef;
+    }
+.hire-me{
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+.hire-me > button{
+    width: 104px;
+    height: 28px;
+    background-color: #003f70;
+    color: white;
+    font-weight: 708;
+    border: none;
+    border-radius: 15px;
+    margin-right: 9px;
+}
+.hire-me > button:hover{
+    box-shadow: 4px 4px 8px 0px #ff0000b8;
+}
+
+.menu-button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.menu-button > i{
+    margin-right: 15px;
+    font-size: 40px;
+    color: white;
+}
+.hidden-parent-div{
+    display: flex;
+    tr
+    justify-content: end;
+}
+.hidden-bar{
+    background-color: rgb(0, 0, 0);
+    width: 250px;
+    /* display: grid; */
+    display: none;
+    margin: 7px 9px;
+    place-items: center;
+    color: white;
+    border-radius: 16px;
+
+}
+.hidden-bar > a{
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+
+   
+}
+.room{
+    width: 100%;
+    height: 100%;
+  position: relative;
+  color: #0ef;
+ 
+}
+.content{
+    position: relative;
+    bottom: 100%;
+}
+
+
+.content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fffdfd;
+}
+.content p{
+    margin: 20px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background:transparent;
+    color:rgb(245, 11, 11);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    z-index: -5;
+    transition: 0.5s;
+
+}
+
+button:hover span{
+    width: 100%;
+    color: #0ef;
+}
+button:hover{
+    border: none;
+    color: #0ef;
+}  
+@media only screen and (max-width: 600px) {
+    .menu-button > i{
+        color: red;
+    }
+    .hire-me {
+        display: none;
+    }
+    .nave-bar{
+        display: none;
+    }
+  }
+@media only screen and (min-width : 600px) {
+    .menu-button{
+        display: none;
+    }
+  }
+
+
